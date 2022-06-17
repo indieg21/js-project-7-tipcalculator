@@ -1,27 +1,46 @@
+<!--   Build a tip calculator
+
+Requirements:
+-Create a Github repository for this project.
+-You should have a form where a user is able to input the cost of the meal.
+-The form should also let the user choose the percentage tip they want to give.
+-When they submit the form, show them the total with tip added.
+-Display the total tip amount as well so they know how much they're tipping.
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <link rel="stylesheet" href="style.css">
     <title>Tip Calculator</title>
   </head>
   <body>
-    <label>
-      How much was your bill?
-    </label>
-    <input type="text" id="billInput" placeholder="Enter your bill" />
-    <br />
-    <label>
-      How much was your tip?
-    </label>
-    <input type="text" id="tipInput" placeholder="Your tip in %" />
-    <br />
-    <button type="button" id="btn">Calculator</button>
+    <section>
+      <div>
 
-    <div id="totalBill"></div>
+        <label> <!-- create a form field  w/ below inputs to display text -->
+          How much was your bill?
+        </label>
+        <input type="text" id="billInput" placeholder="Enter your bill" /> <!-- inline for each line -->
+      </div>
+      <br /> <!-- breakup the line -->
+      <label>
+          How much is your tip?
+      </label>
+      <input type="text" id="tipInput" placeholder="Your tip in %" />
+      <br />
+      <button type="button" id="btn">Calculator</button> <!-- button for calculator -->
+  
+      <div id="totalBill"></div>
+    </section>
 
     <script src="script.js"></script>
   </body>
 </html>
+<!-- create a form field w/ 2 inputs. The 1st input field includes bill amount. The 2nd one
+includes the tip amount. At the end add a button to calculate the total amount including tip
+amount  -->
